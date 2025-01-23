@@ -1,4 +1,4 @@
-name: Replexica i18n
+name: Run i18n
 
 on:
   pull_request:
@@ -15,6 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: replexica/replexica@main
+      - uses: lingodotdev/lingo.dev@main
         with:
           api-key: ${{ secrets.REPLEXICA_API_KEY }}
